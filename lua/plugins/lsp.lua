@@ -68,6 +68,8 @@ lsp.pyright.setup(coq.lsp_ensure_capabilities(default_options))
 lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities(default_options))
 
 -- Go
+require('go').setup()
+
 lsp.gopls.setup(coq.lsp_ensure_capabilities({
     cmd = {'gopls', 'serve'},
     filetypes = {'go', 'gomod'},
@@ -81,3 +83,14 @@ lsp.gopls.setup(coq.lsp_ensure_capabilities({
         }
     }
 }))
+
+-- Run gofmt + goimport on save
+
+local format_sync_grp = vim.api.nvim_create_augroup('GoFormat', {})
+vim.api.nvim_create_autocmd('BufWritePre', {
+    pattern = '*.go',
+    callback = function()
+        require('go.format').goimport()
+    end,
+    group = format_sync_grp,
+})
