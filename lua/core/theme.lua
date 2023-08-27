@@ -10,3 +10,8 @@ end
 
 vim.o.termguicolors = true
 vim.g.transparent_enabled = true
+
+vim.cmd('highlight DiagnosticError guifg=Red')
+vim.cmd('highlight DiagnosticWarn guifg=#ffe533')
+vim.cmd('highlight DiagnosticInfo guifg=#2eccfe')
+vim.cmd('highlight DiagnosticHint guifg=White')
