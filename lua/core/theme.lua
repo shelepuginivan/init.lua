@@ -7,3 +7,6 @@ vim.o.background = 'dark'
         vim.notify('Colorscheme ' .. colorscheme .. ' not found!')
     return
 end
+
+vim.o.termguicolors = true
+vim.g.transparent_enabled = true
