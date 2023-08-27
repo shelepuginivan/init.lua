@@ -33,7 +33,7 @@ require('startup').setup({
         title = 'Basic Commands',
         margin = 5,
         content = {
-            { ' Find File', 'Telescope find_files', '<leader>ff' },
+            { ' Find file', 'Telescope find_files', 'ff' },
             { ' Open tree', 'Neotree show position=current', 'tt' },
             { ' Settings', 'e ~/.config/nvim/init.lua', 'cc' },
             { ' Quit nvim', 'qa', 'qq' },
