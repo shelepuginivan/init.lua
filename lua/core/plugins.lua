@@ -37,6 +37,10 @@ require('lazy').setup({
         tag = '0.1.2',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    {
+        'startup-nvim/startup.nvim',
+        dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' }
+    },
     'pocco81/auto-save.nvim',
     'norcalli/nvim-colorizer.lua',
 
