@@ -14,5 +14,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    'morhetz/gruvbox'
+    'morhetz/gruvbox',
+    'xiyaowong/transparent.nvim'
 })
