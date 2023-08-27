@@ -4,5 +4,6 @@ require('core.settings')
 require('core.theme')
 
 require('plugins.autosave')
+require('plugins.colorizer')
 require('plugins.lsp')
 require('plugins.neotree')
