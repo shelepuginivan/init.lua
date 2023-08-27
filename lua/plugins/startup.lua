@@ -34,7 +34,7 @@ require('startup').setup({
         margin = 5,
         content = {
             { ' Find File', 'Telescope find_files', '<leader>ff' },
-            { ' Find Word', 'Telescope live_grep', '<leader>lg' },
+            { ' Open tree', 'Neotree show position=current', 'tt'},
             { ' Settings', 'e ~/.config/nvim/init.lua', 'cc'},
             { ' Quit nvim', 'qa', 'qq'}
         },
