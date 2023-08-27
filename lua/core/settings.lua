@@ -1,3 +1,4 @@
+vim.o.clipboard = 'unnamedplus'
 vim.o.encoding = 'utf-8'
 vim.o.number = true
 vim.o.swapfile = false
