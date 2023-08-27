@@ -1,15 +1,11 @@
-local opt = vim.opt
+vim.o.encoding = 'utf-8'
+vim.o.number = true
+vim.o.swapfile = false
+vim.o.scrolloff = 7
 
-opt.mouse = 'a'
-opt.encoding = 'utf-8'
-opt.fileformat = 'unix'
-opt.number = true
-opt.swapfile = false
-opt.scrolloff = 7
-
-opt.expandtab = true
-opt.copyindent = true
-opt.softtabstop = 4
-opt.shiftwidth = 4
-opt.tabstop = 4
+vim.o.expandtab = true
+vim.o.copyindent = true
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
 
