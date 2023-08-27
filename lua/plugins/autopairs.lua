@@ -12,7 +12,7 @@ remap('i', '<c-c>', [[pumvisible() ? "<c-e><c-c>" : "<c-c>"]], { expr = true, no
 remap('i', '<tab>', [[pumvisible() ? "<c-n>" : "<tab>"]], { expr = true, noremap = true })
 remap('i', '<s-tab>', [[pumvisible() ? "<c-p>" : "<bs>"]], { expr = true, noremap = true })
 
-_G.MUtils= {}
+_G.MUtils = {}
 
 MUtils.CR = function()
     if vim.fn.pumvisible() ~= 0 then

@@ -7,7 +7,7 @@ local neovim = {
     '    █   ███  ██      ██   ██   ▀█▄█    ██   ██ ██ ██    ',
     '   ▄█▄   ▀█   ▀█▄▄▄▀  ▀█▄▄█▀    ▀█    ▄██▄ ▄██ ██ ██▄   ',
     '                                                        ',
-    '╚══════════════════════════════════════════════════════╝'
+    '╚══════════════════════════════════════════════════════╝',
 }
 
 local quote = { 'Will there ever be a place for the broken in the light?' }
@@ -23,7 +23,7 @@ require('startup').setup({
         content = neovim,
         highlight = 'Text',
         default_color = '',
-        oldfiles_amount = 0
+        oldfiles_amount = 0,
     },
     body = {
         type = 'mapping',
@@ -34,13 +34,13 @@ require('startup').setup({
         margin = 5,
         content = {
             { ' Find File', 'Telescope find_files', '<leader>ff' },
-            { ' Open tree', 'Neotree show position=current', 'tt'},
-            { ' Settings', 'e ~/.config/nvim/init.lua', 'cc'},
-            { ' Quit nvim', 'qa', 'qq'}
+            { ' Open tree', 'Neotree show position=current', 'tt' },
+            { ' Settings', 'e ~/.config/nvim/init.lua', 'cc' },
+            { ' Quit nvim', 'qa', 'qq' },
         },
         highlight = 'String',
         default_color = '',
-        oldfiles_amount = 0
+        oldfiles_amount = 0,
     },
     footer = {
         type = 'text',
@@ -52,17 +52,17 @@ require('startup').setup({
         content = quote,
         highlight = 'Number',
         default_color = '',
-        oldfiles_amount = 0
+        oldfiles_amount = 0,
     },
     options = {
         mapping_keys = true,
         cursor_column = 0.5,
         empty_lines_between_mappings = true,
         disable_statuslines = true,
-        paddings = { 2, 2, 1, 2 }
+        paddings = { 2, 2, 1, 2 },
     },
     mappings = {
-        execute_command = '<CR>'
+        execute_command = '<CR>',
     },
-    parts = { 'header', 'body', 'footer' }
+    parts = { 'header', 'body', 'footer' },
 })

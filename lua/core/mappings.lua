@@ -15,7 +15,7 @@ map('v', '<C-z>', '<C-o>u', opts)
 map('n', '<C-z>', 'u', opts)
 
 map('v', '{', 'di{}<left><esc>p', opts)
-map('v' ,'(', 'di()<left><esc>p', opts)
+map('v', '(', 'di()<left><esc>p', opts)
 map('v', '[', 'di[]<left><esc>p', opts)
 map('v', "'", "di''<left><esc>p", opts)
 map('v', '"', 'di""<left><esc>p', opts)

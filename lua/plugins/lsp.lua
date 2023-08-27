@@ -7,7 +7,7 @@ local coq = require('coq')
 -- TypeScript
 local buf_map = function(bufnr, mode, lhs, rhs, opts)
     vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or {
-        silent = true
+        silent = true,
     })
 end
 
@@ -21,13 +21,13 @@ lsp.tsserver.setup(coq.lsp_ensure_capabilities({
         buf_map(bufnr, 'n', 'gs', ':TSLspOrganize<CR>')
         buf_map(bufnr, 'n', 'gi', ':TSLspRenameFile<CR>')
         buf_map(bufnr, 'n', 'go', ':TSLspImportAll<CR>')
-    end
+    end,
 }))
 
 local default_options = {
     flags = {
-        debounce_text_changes = 150
-    }
+        debounce_text_changes = 150,
+    },
 }
 
 -- Python
@@ -40,17 +40,17 @@ lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities(default_options))
 require('go').setup()
 
 lsp.gopls.setup(coq.lsp_ensure_capabilities({
-    cmd = {'gopls', 'serve'},
-    filetypes = {'go', 'gomod'},
+    cmd = { 'gopls', 'serve' },
+    filetypes = { 'go', 'gomod' },
     root_dir = util.root_pattern('go.work', 'go.mod', '.git'),
     settings = {
         gopls = {
             analyses = {
-                unusedparams = true
+                unusedparams = true,
             },
-            staticcheck = true
-        }
-    }
+            staticcheck = true,
+        },
+    },
 }))
 
 -- Run gofmt + goimport on save

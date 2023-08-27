@@ -17,7 +17,7 @@ require('lazy').setup({
     'morhetz/gruvbox',
     {
         'xiyaowong/transparent.nvim',
-        lazy = false
+        lazy = false,
     },
 
     {
@@ -26,23 +26,23 @@ require('lazy').setup({
         dependencies = {
             'nvim-lua/plenary.nvim',
             'nvim-tree/nvim-web-devicons',
-            'MunifTanjim/nui.nvim'
-        }
+            'MunifTanjim/nui.nvim',
+        },
     },
     {
         'nvim-lualine/lualine.nvim',
         dependencies = {
-            'nvim-tree/nvim-web-devicons'
-        }
+            'nvim-tree/nvim-web-devicons',
+        },
     },
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        dependencies = { 'nvim-lua/plenary.nvim' },
     },
     {
         'startup-nvim/startup.nvim',
-        dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' }
+        dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' },
     },
     'pocco81/auto-save.nvim',
     'norcalli/nvim-colorizer.lua',
@@ -50,13 +50,15 @@ require('lazy').setup({
     {
         'ms-jpq/coq_nvim',
         branch = 'coq',
-        init = function() vim.g.coq_settings = { auto_start = 'shut-up' } end,
+        init = function()
+            vim.g.coq_settings = { auto_start = 'shut-up' }
+        end,
         dependencies = {
             { 'ms-jpq/coq.artifacts', branch = 'artifacts' },
             { 'neovim/nvim-lspconfig' },
-            { 'L3MON4D3/LuaSnip' }
+            { 'L3MON4D3/LuaSnip' },
         },
-        lazy = false
+        lazy = false,
     },
     {
         'ray-x/go.nvim',
@@ -67,9 +69,9 @@ require('lazy').setup({
         config = function()
             require('go').setup()
         end,
-        event = {'CmdlineEnter'},
-        ft = {'go', 'gomod'}
+        event = { 'CmdlineEnter' },
+        ft = { 'go', 'gomod' },
     },
     'jose-elias-alvarez/nvim-lsp-ts-utils',
-    'windwp/nvim-autopairs'
+    'windwp/nvim-autopairs',
 })
