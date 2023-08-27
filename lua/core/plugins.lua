@@ -27,5 +27,18 @@ require('lazy').setup({
             'nvim-tree/nvim-web-devicons',
             'MunifTanjim/nui.nvim'
         }
-    }
+    },
+
+    {
+        'ms-jpq/coq_nvim',
+        branch = 'coq',
+        init = function() vim.g.coq_settings = { auto_start = 'shut-up' } end,
+        dependencies = {
+            { 'ms-jpq/coq.artifacts', branch = 'artifacts' },
+            { 'neovim/nvim-lspconfig' },
+            { 'L3MON4D3/LuaSnip' }
+        },
+        lazy = false
+    },
+    'jose-elias-alvarez/nvim-lsp-ts-utils'
 })
