@@ -40,7 +40,7 @@ require('startup').setup({
         },
         highlight = 'String',
         default_color = '',
-        Oldfiles_amount = 0
+        oldfiles_amount = 0
     },
     footer = {
         type = 'text',
