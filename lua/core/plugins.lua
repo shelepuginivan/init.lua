@@ -26,6 +26,12 @@ require('lazy').setup({
             'MunifTanjim/nui.nvim'
         }
     },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        }
+    },
     'pocco81/auto-save.nvim',
     'norcalli/nvim-colorizer.lua',
 
