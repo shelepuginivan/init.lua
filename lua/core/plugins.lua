@@ -15,7 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     'morhetz/gruvbox',
-    'xiyaowong/transparent.nvim',
+    {
+        'xiyaowong/transparent.nvim',
+        lazy = false
+    },
 
     {
         'nvim-neo-tree/neo-tree.nvim',
