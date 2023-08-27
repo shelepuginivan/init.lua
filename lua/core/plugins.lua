@@ -14,8 +14,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    'pocco81/auto-save.nvim',
-
     'morhetz/gruvbox',
     'xiyaowong/transparent.nvim',
 
@@ -28,6 +26,8 @@ require('lazy').setup({
             'MunifTanjim/nui.nvim'
         }
     },
+    'pocco81/auto-save.nvim',
+    'norcalli/nvim-colorizer.lua',
 
     {
         'ms-jpq/coq_nvim',
