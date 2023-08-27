@@ -32,6 +32,11 @@ require('lazy').setup({
             'nvim-tree/nvim-web-devicons'
         }
     },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.2',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
     'pocco81/auto-save.nvim',
     'norcalli/nvim-colorizer.lua',
 
