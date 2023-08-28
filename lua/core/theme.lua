@@ -1,12 +1,5 @@
 local colorscheme = 'gruvbox'
 
-local ok, _ = pcall(vim.cmd, 'colorscheme ' .. colorscheme)
-
-vim.o.background = 'dark'
-if not ok then
-    vim.notify('Colorscheme ' .. colorscheme .. ' not found!')
-end
-
 local extra_groups = {
     'NeoTreeNormal',
     'NeoTreeNormalNC',
@@ -25,6 +18,7 @@ local extra_groups = {
     'NeoTreeGitUntracked',
 }
 
+vim.cmd.colorscheme(colorscheme)
 vim.o.termguicolors = true
 vim.g.transparent_enabled = true
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, extra_groups)
