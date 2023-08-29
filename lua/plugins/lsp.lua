@@ -1,5 +1,3 @@
-local luasnip = require('luasnip')
-local async = require('plenary.async')
 local lsp = require('lspconfig')
 local util = require('lspconfig/util')
 local coq = require('coq')

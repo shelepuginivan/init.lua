@@ -56,7 +56,6 @@ require('lazy').setup({
         dependencies = {
             { 'ms-jpq/coq.artifacts', branch = 'artifacts' },
             { 'neovim/nvim-lspconfig' },
-            { 'L3MON4D3/LuaSnip' },
         },
         lazy = false,
     },
