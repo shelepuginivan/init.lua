@@ -34,6 +34,27 @@ lsp.pyright.setup(coq.lsp_ensure_capabilities(default_options))
 -- Rust
 lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities(default_options))
 
+-- Lua
+require('lspconfig').lua_ls.setup(coq.lsp_ensure_capabilities({
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' },
+            },
+            runtime = {
+                version = 'LuaJIT',
+            },
+            telemetry = {
+                enable = false,
+            },
+            workspace = {
+                library = vim.api.nvim_get_runtime_file('', true),
+                checkThirdParty = false,
+            },
+        },
+    },
+}))
+
 -- Go
 require('go').setup()
 
