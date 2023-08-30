@@ -3,17 +3,20 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
+-- Neotree
 map('n', '<C-a>', '<cmd>Neotree toggle<CR>', opts)
+
+-- Telescope
 map('n', 'ff', '<cmd>Telescope find_files<CR>', opts)
 map('n', 'fg', '<cmd>Telescope live_grep<CR>', opts)
 map('n', 'fb', '<cmd>Telescope buffers<CR>', opts)
 map('n', 'fh', '<cmd>Telescope help_tags<CR>', opts)
 
+-- Misc
 map('i', 'jk', '<esc>', opts)
 map('i', '<C-z>', '<C-o>u', opts)
 map('v', '<C-z>', '<C-o>u', opts)
 map('n', '<C-z>', 'u', opts)
-
 map('v', '{', 'di{}<left><esc>p', opts)
 map('v', '(', 'di()<left><esc>p', opts)
 map('v', '[', 'di[]<left><esc>p', opts)
@@ -21,6 +24,7 @@ map('v', "'", "di''<left><esc>p", opts)
 map('v', '"', 'di""<left><esc>p', opts)
 map('v', '`', 'di``<left><esc>p', opts)
 
+-- LSP
 -- Set LSP mappings when language server is attached
 -- See `:help vim.lsp.*` for documentation on any of the below functions
 local on_attach = function(event)
