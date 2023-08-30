@@ -71,6 +71,5 @@ require('lazy').setup({
         event = { 'CmdlineEnter' },
         ft = { 'go', 'gomod' },
     },
-    'jose-elias-alvarez/nvim-lsp-ts-utils',
     'windwp/nvim-autopairs',
 })
