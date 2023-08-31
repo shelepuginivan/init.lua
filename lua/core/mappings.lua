@@ -5,6 +5,7 @@ vim.g.mapleader = ' '
 
 -- Neotree
 map('n', '<C-a>', '<cmd>Neotree toggle<CR>', opts)
+map('n', '<C-q>', '<cmd>Neotree focus<CR>', opts)
 
 -- Telescope
 map('n', 'ff', '<cmd>Telescope find_files<CR>', opts)
