@@ -4,8 +4,8 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 
 -- Neotree
-map('n', '<C-a>', '<cmd>Neotree toggle<CR>', opts)
-map('n', '<C-q>', '<cmd>Neotree focus<CR>', opts)
+map('n', '<C-q>', '<cmd>Neotree toggle<CR>', opts)
+map('n', '<C-w>', '<cmd>Neotree focus<CR>', opts)
 
 -- Telescope
 map('n', 'ff', '<cmd>Telescope find_files<CR>', opts)
