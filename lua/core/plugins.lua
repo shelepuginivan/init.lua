@@ -69,5 +69,9 @@ require('lazy').setup({
         event = { 'CmdlineEnter' },
         ft = { 'go', 'gomod' },
     },
-    'windwp/nvim-autopairs',
+    {
+        'windwp/nvim-autopairs',
+        event = 'InsertEnter',
+        opts = {},
+    },
 })
