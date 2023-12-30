@@ -4,7 +4,7 @@ require('core.settings')
 require('core.theme')
 
 require('plugins.autosave')
-require('plugins.autopairs')
+require('plugins.cmp')
 require('plugins.colorizer')
 require('plugins.lsp')
 require('plugins.lualine')
