@@ -1,15 +1,20 @@
 local lsp = require('lspconfig')
 local util = require('lspconfig.util')
-local coq = require('coq')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- TypeScript
-lsp.tsserver.setup(coq.lsp_ensure_capabilities({}))
+lsp.tsserver.setup({
+    capabilities = capabilities,
+})
 
 -- Python
-lsp.pyright.setup(coq.lsp_ensure_capabilities({}))
+lsp.pyright.setup({
+    capabilities = capabilities,
+})
 
 -- Lua
-lsp.lua_ls.setup(coq.lsp_ensure_capabilities({
+lsp.lua_ls.setup({
+    capabilities = capabilities,
     settings = {
         Lua = {
             diagnostics = {
@@ -27,14 +32,15 @@ lsp.lua_ls.setup(coq.lsp_ensure_capabilities({
             },
         },
     },
-}))
+})
 
 -- Go
 require('go').setup()
 
-lsp.gopls.setup(coq.lsp_ensure_capabilities({
+lsp.gopls.setup({
+    capabilities = capabilities,
     cmd = { 'gopls', 'serve' },
-    filetypes = { 'go', 'gomod' },
+    filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
     root_dir = util.root_pattern('go.work', 'go.mod', '.git'),
     settings = {
         gopls = {
@@ -44,10 +50,9 @@ lsp.gopls.setup(coq.lsp_ensure_capabilities({
             staticcheck = true,
         },
     },
-}))
+})
 
 -- Run gofmt + goimport on save
-
 local format_sync_grp = vim.api.nvim_create_augroup('GoFormat', {})
 vim.api.nvim_create_autocmd('BufWritePre', {
     pattern = '*.go',
