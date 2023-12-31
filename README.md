@@ -3,7 +3,6 @@
 ### Requirements:
 
 - Neovim 0.9.0 or higher
-- Python 3.8.2 (with `venv` module) or higher
 
 #### Optional requirements
 
