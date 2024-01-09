@@ -1,16 +1,16 @@
 # shelepuginivan's Neovim config
 
-### Requirements:
+## Requirements:
 
 - Neovim 0.9.0 or higher
 
-#### Optional requirements
+### Optional requirements
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - telescope live grep (`<leader>fg`)
 
-### Installation
+## Installation
 
-#### Via installation script
+### Via installation script
 
 [View source](https://github.com/shelepuginivan/awesome/blob/main/install.sh)
 
@@ -18,7 +18,7 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shelepuginivan/init.lua/main/install.sh)"
 ```
 
-#### Manual installation
+### Manual installation
 
 Backup previous installation and data folder:
 
@@ -32,4 +32,3 @@ Clone the repository:
 ```shell
 git clone --depth 1 https://github.com/shelepuginivan/init.lua ~/.config/nvim
 ```
-
