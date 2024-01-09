@@ -12,13 +12,15 @@
 
 #### Via installation script
 
+[View source](https://github.com/shelepuginivan/awesome/blob/main/install.sh)
+
 ```shell
-curl -fsSL https://raw.githubusercontent.com/shelepuginivan/init.lua/main/install.sh | bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/shelepuginivan/init.lua/main/install.sh)"
 ```
 
 #### Manual installation
 
-Backup previous installation and shared folder:
+Backup previous installation and data folder:
 
 ```shell
 mv ~/.config/nvim ~/.config/nvim.bak
