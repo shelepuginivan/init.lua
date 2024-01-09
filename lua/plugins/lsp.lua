@@ -7,6 +7,11 @@ lsp.tsserver.setup({
     capabilities = capabilities,
 })
 
+-- Rust
+lsp.rust_analyzer.setup({
+    capabilities = capabilities,
+})
+
 -- Python
 lsp.pyright.setup({
     capabilities = capabilities,
