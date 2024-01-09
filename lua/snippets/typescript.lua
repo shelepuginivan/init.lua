@@ -4,7 +4,7 @@ local t = ls.text_node
 local i = ls.insert_node
 
 -- Apply JavaScript snippets to TypeScript files
-ls.filetype_extend('typescript', {'javascript'})
+ls.filetype_extend('typescript', { 'javascript' })
 
 -- JavaScript snippets
 ls.add_snippets('javascript', {
