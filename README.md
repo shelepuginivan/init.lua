@@ -12,7 +12,7 @@
 
 ### Via installation script
 
-[View source](https://github.com/shelepuginivan/awesome/blob/main/install.sh)
+[View source](https://github.com/shelepuginivan/init.lua/blob/main/install.sh)
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shelepuginivan/init.lua/main/install.sh)"
