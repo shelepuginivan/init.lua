@@ -1,7 +1,10 @@
 vim.o.clipboard = 'unnamedplus'
 vim.o.encoding = 'utf-8'
-vim.o.number = true
 vim.o.swapfile = false
+
+vim.o.showcmd = false
+
+vim.o.number = true
 vim.o.scrolloff = 7
 
 vim.o.expandtab = true
