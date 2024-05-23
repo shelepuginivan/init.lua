@@ -31,6 +31,10 @@ local extra_groups = {
     'NeoTreeGitUntracked',
 }
 
+local function highlight(name, val)
+    vim.api.nvim_set_hl(0, name, val)
+end
+
 -- Global
 vim.cmd.colorscheme(colorscheme)
 vim.o.termguicolors = true
@@ -39,20 +43,20 @@ vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, extra
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = colors.gray, fg = colors.beige })
 
 -- Telescope
-vim.api.nvim_set_hl(0, 'TelescopeSelection', { bg = colors.gray, fg = colors.red })
-vim.api.nvim_set_hl(0, 'TelescopeMatching', { fg = colors.yellow })
-vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = colors.gray })
-vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { bg = colors.gray, fg = colors.gray })
-vim.api.nvim_set_hl(0, 'TelescopeResultsTitle', { bg = colors.red, fg = colors.beige })
-vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = colors.gray_lighter })
-vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = colors.gray_lighter, fg = colors.gray_lighter })
-vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { bg = colors.orange, fg = colors.beige })
-vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = colors.gray_darker })
-vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { bg = colors.gray_darker, fg = colors.gray_darker })
-vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', { bg = colors.green, fg = colors.beige })
+highlight('TelescopeSelection', { bg = colors.gray, fg = colors.red })
+highlight('TelescopeMatching', { fg = colors.yellow })
+highlight('TelescopeNormal', { bg = colors.gray })
+highlight('TelescopeResultsBorder', { bg = colors.gray, fg = colors.gray })
+highlight('TelescopeResultsTitle', { bg = colors.red, fg = colors.beige })
+highlight('TelescopePromptNormal', { bg = colors.gray_lighter })
+highlight('TelescopePromptBorder', { bg = colors.gray_lighter, fg = colors.gray_lighter })
+highlight('TelescopePromptTitle', { bg = colors.orange, fg = colors.beige })
+highlight('TelescopePreviewNormal', { bg = colors.gray_darker })
+highlight('TelescopePreviewBorder', { bg = colors.gray_darker, fg = colors.gray_darker })
+highlight('TelescopePreviewTitle', { bg = colors.green, fg = colors.beige })
 
 -- LSP Diagnostic messages
-vim.api.nvim_set_hl(0, 'DiagnosticError', { fg = colors.red })
-vim.api.nvim_set_hl(0, 'DiagnosticWarn', { fg = colors.yellow })
-vim.api.nvim_set_hl(0, 'DiagnosticInfo', { fg = colors.blue })
-vim.api.nvim_set_hl(0, 'DiagnosticHine', { fg = colors.beige_lighter })
+highlight('DiagnosticError', { fg = colors.red })
+highlight('DiagnosticWarn', { fg = colors.yellow })
+highlight('DiagnosticInfo', { fg = colors.blue })
+highlight('DiagnosticHine', { fg = colors.beige_lighter })
