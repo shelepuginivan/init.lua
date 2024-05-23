@@ -42,6 +42,12 @@ vim.g.transparent_enabled = true
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, extra_groups)
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = colors.gray, fg = colors.beige })
 
+-- nvim-cmp
+highlight('CmpItemAbbrDeprecated', { fg = '#808080', strikethrough = true })
+highlight('CmpItemAbbrMatch', { fg = colors.red })
+highlight('CmpItemAbbrMatchFuzzy', { fg = colors.orange })
+highlight('CmpItemKind', { fg = colors.yellow })
+
 -- Telescope
 highlight('TelescopeSelection', { bg = colors.gray, fg = colors.red })
 highlight('TelescopeMatching', { fg = colors.yellow })
