@@ -36,6 +36,7 @@ vim.cmd.colorscheme(colorscheme)
 vim.o.termguicolors = true
 vim.g.transparent_enabled = true
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, extra_groups)
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = colors.gray, fg = colors.beige })
 
 -- Telescope
 vim.api.nvim_set_hl(0, 'TelescopeSelection', { bg = colors.gray, fg = colors.red })
