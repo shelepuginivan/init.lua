@@ -7,6 +7,20 @@ vim.g.mapleader = ' '
 map('n', '<C-q>', '<cmd>Neotree toggle<CR>', opts)
 map('n', '<C-w>', '<cmd>Neotree focus<CR>', opts)
 
+-- LuaSnip
+map('i', '<C-d>', function()
+    require('luasnip').jump(1)
+end, opts)
+map('i', '<C-s>', function()
+    require('luasnip').jump(-1)
+end, opts)
+map('s', '<Tab>', function()
+    require('luasnip').jump(1)
+end, opts)
+map('s', '<S-Tab>', function()
+    require('luasnip').jump(-1)
+end, opts)
+
 -- Telescope
 map('n', 'ff', '<cmd>Telescope find_files<CR>', opts)
 map('n', 'fg', '<cmd>Telescope live_grep<CR>', opts)
