@@ -32,6 +32,17 @@ ls.add_snippets('go', {
         }),
     }),
     s({
+        trig = 'ifep',
+        name = 'error check panic',
+        desc = 'Insert a basic err not nil statement with panic',
+    }, {
+        t({
+            'if err != nil {}',
+            '\tpanic(err)',
+            '}',
+        }),
+    }),
+    s({
         trig = 'ifer',
         name = 'error check return err',
         desc = 'Insert a basic if err not nil statement with return err',
