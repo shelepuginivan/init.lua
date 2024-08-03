@@ -18,6 +18,14 @@ require('neo-tree').setup({
             highlight = 'NeoTreeFileIcon',
         },
     },
+    event_handlers = {
+        {
+            event = 'file_open_requested',
+            handler = function()
+                require('neo-tree.command').execute({ action = 'close' })
+            end,
+        },
+    },
     filesystem = {
         filtered_items = {
             visible = true,
@@ -26,6 +34,7 @@ require('neo-tree').setup({
         },
     },
     window = {
-        width = 30,
+        position = 'right',
+        width = 40,
     },
 })
