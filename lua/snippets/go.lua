@@ -37,7 +37,7 @@ ls.add_snippets('go', {
         desc = 'Insert a basic err not nil statement with panic',
     }, {
         t({
-            'if err != nil {}',
+            'if err != nil {',
             '\tpanic(err)',
             '}',
         }),
