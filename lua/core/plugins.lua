@@ -57,7 +57,7 @@ require('lazy').setup({
     },
     'pocco81/auto-save.nvim',
     'mattn/emmet-vim',
-    'norcalli/nvim-colorizer.lua',
+    'brenoprata10/nvim-highlight-colors',
     {
         'ray-x/go.nvim',
         dependencies = {
