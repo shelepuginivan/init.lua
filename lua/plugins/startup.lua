@@ -18,7 +18,7 @@ local quotes = {
         'And if I do, I love the rush as much as I love showing up',
     },
     { 'Look! Sanae-san is right behind you!!' },
-    { 'Umm actually... this is pseudorandom quote.' },
+    { 'Umm actually... this is a pseudorandom quote.' },
     { 'Utopia, Utopia, Utopia, forever' },
     { 'Will there ever be a place for the broken in the light?' },
     { 'Stay hydrated' },
@@ -71,7 +71,7 @@ require('startup').setup({
         cursor_column = 0.5,
         empty_lines_between_mappings = true,
         disable_statuslines = true,
-        paddings = { 2, 2, 1, 2 },
+        paddings = { 4, 2, 1, 2 },
     },
     mappings = {
         execute_command = '<CR>',
