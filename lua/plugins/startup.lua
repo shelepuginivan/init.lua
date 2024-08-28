@@ -35,7 +35,7 @@ require('startup').setup({
         content = {
             { ' Find file', 'Telescope find_files', 'f' },
             { ' Open tree', 'Neotree show position=current', 't' },
-            { ' Settings', 'e ~/.config/nvim', 'c' },
+            { ' Settings', 'cd ~/.config/nvim | Neotree show position=current', 'c' },
             { ' Quit nvim', 'qa', 'q' },
         },
         highlight = 'String',
