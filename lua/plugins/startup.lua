@@ -10,7 +10,19 @@ local neovim = {
     '╚══════════════════════════════════════════════════════╝',
 }
 
-local quote = { 'Will there ever be a place for the broken in the light?' }
+-- One of these quotes will be chosen randomly. Can be multi-line.
+local quotes = {
+    { 'Hello Hello Hello Hello Hello Hello!' },
+    {
+        "I don't have to do too much to prove myself, I'm good enough",
+        'And if I do, I love the rush as much as I love showing up',
+    },
+    { 'Look! Sanae-san is right behind you!!' },
+    { 'Umm actually... this is pseudorandom quote.' },
+    { 'Utopia, Utopia, Utopia, forever' },
+    { 'Will there ever be a place for the broken in the light?' },
+    { 'Stay hydrated' },
+}
 
 require('startup').setup({
     header = {
@@ -49,7 +61,7 @@ require('startup').setup({
         fold_section = false,
         title = 'Footer',
         margin = 5,
-        content = quote,
+        content = quotes[math.random(#quotes)],
         highlight = 'Number',
         default_color = '',
         oldfiles_amount = 0,
