@@ -17,6 +17,13 @@ lsp.rust_analyzer.setup({
     capabilities = capabilities,
 })
 
+-- Typst
+lsp.typst_lsp.setup({
+    settings = {
+        exportPdf = 'onSave',
+    },
+})
+
 -- Python
 lsp.pyright.setup({
     capabilities = capabilities,
