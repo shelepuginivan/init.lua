@@ -2,6 +2,16 @@ local lsp = require('lspconfig')
 local util = require('lspconfig.util')
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- C / C++ / Objective C
+lsp.ccls.setup({
+    capabilities = capabilities,
+    init_options = {
+        cache = {
+            directory = '.ccls-cache',
+        },
+    },
+})
+
 -- TypeScript
 lsp.tsserver.setup({
     capabilities = capabilities,
