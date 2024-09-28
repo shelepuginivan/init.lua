@@ -38,4 +38,13 @@ ls.add_snippets('c', {
             '}',
         }),
     }),
+    s({
+        trig = 'once',
+        name = '#pragma once',
+    }, {
+        t({
+            '#pragma once',
+            '',
+        }),
+    }),
 })
