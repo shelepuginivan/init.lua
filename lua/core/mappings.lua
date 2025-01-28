@@ -5,7 +5,6 @@ vim.g.mapleader = ' '
 
 -- Neotree
 map('n', '<C-q>', '<cmd>Neotree toggle<CR>', opts)
-map('n', '<C-w>', '<cmd>Neotree focus<CR>', opts)
 
 -- LuaSnip
 map('i', '<C-d>', function()
@@ -32,12 +31,6 @@ map('i', 'jk', '<esc>', opts)
 map('i', '<C-z>', '<C-o>u', opts)
 map('v', '<C-z>', '<C-o>u', opts)
 map('n', '<C-z>', 'u', opts)
-map('v', '{', 'di{}<left><esc>p', opts)
-map('v', '(', 'di()<left><esc>p', opts)
-map('v', '[', 'di[]<left><esc>p', opts)
-map('v', "'", "di''<left><esc>p", opts)
-map('v', '"', 'di""<left><esc>p', opts)
-map('v', '`', 'di``<left><esc>p', opts)
 
 -- LSP
 -- Set LSP mappings when language server is attached
