@@ -17,6 +17,11 @@ lsp.ts_ls.setup({
     capabilities = capabilities,
 })
 
+-- Typst
+lsp.tinymist.setup({
+    capabilities = capabilities,
+})
+
 -- Vue
 lsp.volar.setup({
     capabilities = capabilities,
