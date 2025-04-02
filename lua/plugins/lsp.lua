@@ -29,7 +29,14 @@ lsp.tinymist.setup({
 -- Vue
 lsp.volar.setup({
     capabilities = capabilities,
-    filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' },
+    filetypes = {
+        'typescript',
+        'javascript',
+        'javascriptreact',
+        'typescriptreact',
+        'vue',
+        'json',
+    },
 })
 
 -- Rust
