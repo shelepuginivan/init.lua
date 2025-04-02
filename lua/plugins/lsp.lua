@@ -20,6 +20,10 @@ lsp.ts_ls.setup({
 -- Typst
 lsp.tinymist.setup({
     capabilities = capabilities,
+    settings = {
+        exportPdf = 'onSave',
+        formatterMode = 'typstyle',
+    },
 })
 
 -- Vue
