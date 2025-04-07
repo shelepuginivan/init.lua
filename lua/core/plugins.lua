@@ -75,4 +75,8 @@ require('lazy').setup({
         event = 'InsertEnter',
         opts = {},
     },
+    {
+        'folke/todo-comments.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+    },
 })
