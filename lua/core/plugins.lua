@@ -55,6 +55,7 @@ require('lazy').setup({
         'startup-nvim/startup.nvim',
         dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' },
     },
+    { 'echasnovski/mini.ai', version = '*' },
     'pocco81/auto-save.nvim',
     'mattn/emmet-vim',
     'brenoprata10/nvim-highlight-colors',
