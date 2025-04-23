@@ -54,6 +54,17 @@ ls.add_snippets('go', {
         }),
     }),
     s({
+        trig = 'ifern',
+        name = 'error check return nil and err',
+        desc = 'Insert a basic if err not nil statement with return nil, err',
+    }, {
+        t({
+            'if err != nil {',
+            '\treturn nil, err',
+            '}',
+        }),
+    }),
+    s({
         trig = 'mp',
         name = 'main package',
         desc = 'Insert Go main package base structure',
